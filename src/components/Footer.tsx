@@ -27,7 +27,7 @@ function Footer() {
             <h1 className="text-[20px] text-neutral-800 font-extrabold">Ecommerce</h1>
           </div>
           <p className="text-neutral-500 font-normal text-[14px] mb-4">DevCut is a YouTube channel for practical project-based learning.</p>
-          <div className="flex gap-4">
+          <div className="flex gap-6">
             <a href="https://github.com" aria-label="Github">
               <img src={Github} alt="Github" className="w-6 h-6 filter grayscale hover:grayscale-0" />
             </a>
