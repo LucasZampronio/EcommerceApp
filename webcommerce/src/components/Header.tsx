@@ -11,8 +11,7 @@ function Header() {
                 <div className="flex w-150 justify-end ">
                     <div className="flex items-center gap-3 ">
                         <img src={logo} className='w-12 h-12' alt="" />
-                        <h1 className='font-[Inter] text-neutral-900 capitalize font-bold text-[19px]'>Ecommerce</h1>
-
+                        <h1 className='font-[Inter] text-neutral-900 capitalize font-extrabold text-[19px]'>Ecommerce</h1>
                     </div>
                     <div className="flex  justify-start items-center">
                         <nav className="flex pl-26">
