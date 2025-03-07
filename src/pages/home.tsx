@@ -5,22 +5,32 @@ import Guyimage from '../Images/Hero Image.svg'
 import Star from '../Images/Estrela.svg'
 import Background from '../Images/Background.svg'
 import Footer  from '../components/Footer'
+import Truck from '../Images/Truck.svg'
+import Badge from '../Images/Badge.svg'
+import Shield from '../Images/Shield.svg'
+import Mockup from '../Images/Mockup.svg'
+import Sleek from '../Images/Sleek.svg'
+import Tess from '../Images/Tess.svg'
+import Sweetshirts from '../Images/Sweatshirts.svg'
+
 function Home() {
   return (
     <div>
         <Header />
+          {/*PRIMEIRA SEÇÃO */}
         <section className='bg-neutral-100 w-full h-142'>
           <div className='flex font-[Inter] items-center justify-between  w-full h-142'>
             <div className='ml-37'>
               <h1 className='text-neutral-800 font-bold text-[32px]'>Fresh Arrivals Online</h1>
               <h2 className='text-neutral-600 font-normal tex-[14px] mt-5'>Discover Our Newest Collection Today.</h2>
 
-              <div className=' border-2 rounded-[6px] mt-16 gap-4 flex bg-neutral-900 w-50 hover:border-neutral-600 hover:bg-neutral-600 justify-center items-center pt-2 pb-2'>
+              <div className=' border-2 rounded-[6px] mt-16 gap-4 flex bg-neutral-900 w-50 hover:border-neutral-600 hover:bg-neutral-600 justify-center items-center pt-3 pb-3'>
                 <button className='font-medium text-[14px] text-neutral-100'>View Collection</button>
                 <img src={RightArrow} alt="" />
               </div>
             </div>
             <div>
+            {/*IMAGENS PRIMEIRA SEÇÃO*/}
             <div className='grid grid-cols-1 grid-rows-1 h-141  mr-20'>
               <img className='col-start-1 col-end-2 row-start-1 row-end-2 z-10 self-start translate-y-32 -translate-x-22' src={Star} alt="Star" />
               <img className='col-start-1 col-end-2 row-start-1 row-end-2 w-110 h-auto self-end z-0 -translate-x-26 -translate-y-1' src={Background} alt="Background" />
@@ -28,10 +38,64 @@ function Home() {
             </div>
             </div>
           </div>
-          <div>
-
-          </div>
         </section>
+            {/*SEGUNDA SEÇÃO*/}
+        <section className='w-full flex flex-col items-center justify-center font-[Inter]'>
+          <div className=' w-308 h-60 mt-30 mb-30 p-4 rounded-lg'>
+            <div className='grid grid-cols-3 gap-4 h-full'>
+              <div className='bg-white rounded-lg w-80  items-center justify-center'>
+                  <img src={Truck} alt="" />
+                  <h1 className='font-bold mt-4 text-neutral-800 text-[16px]'>Free Shipping</h1>
+                  <p className='mt-4 text-neutral-600 font-normal tex-[14px]'>Upgrade your style today and get FREE shipping on all orders! Don't miss out.</p>
+              </div>
+              <div className='bg-white rounded-lg w-80 items-center justify-center'>
+                  <img src={Badge} alt="" />
+                  <h1 className='font-bold mt-4 text-neutral-800 text-[16px]'>Satisfaction Guarantee</h1>
+                  <p className='mt-4 text-neutral-600 font-normal tex-[14px]'>Shop confidently with our Satisfaction Guarantee: Love it or get a refund.</p>
+              </div>
+              <div className='bg-white rounded-lg w-70  items-center justify-center'>
+                  <img src={Shield} alt="" />
+                  <h1 className='font-bold mt-4 text-neutral-800 text-[16px]' >Secure Payment</h1>
+                  <p className='mt-4 text-neutral-600 font-normal tex-[14px]'>Your security is our priority. Your payments are secure with us.</p>
+              </div>
+            </div>
+          </div>
+            {/*CARROSEL*/}
+          <div className='border-blue-800 border-1 w-308 h-160 mb-30'>
+            <div className='text-center'>
+              <h1>Shop Now</h1>
+              <h2>Best Selling</h2>
+            </div>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6'>
+              <div>
+                <img src={Sweetshirts} alt="" />
+                <h1>Elegant Ebony Sweatshirts</h1>
+                <p>IN STOCK</p>
+                <p>$35.00</p>
+              </div>
+              <div>
+                <img src={Sleek} alt="" />
+                <h1>Sleek and Cozy Black</h1>
+                <p>IN STOCK</p>
+                <p>$57.00</p>
+
+              </div>
+              <div>
+                <img src={Tess} alt="" />
+                <h1>Raw Black Tees</h1>
+                <p>IN STOCK</p>
+                <p>$19.00</p>
+
+              </div>
+              <div>
+                <img src={Mockup} alt="" />
+                <h1>MOCKUP Black</h1>
+                <p>IN STOCK</p>
+                <p>$30.00</p>
+              </div>
+            </div>  
+          </div>
+          </section>
         <Footer />
     </div>
   );
