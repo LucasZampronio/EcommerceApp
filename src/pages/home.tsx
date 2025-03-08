@@ -61,37 +61,45 @@ function Home() {
             </div>
           </div>
             {/*CARROSEL*/}
-          <div className='border-blue-800 border-1 w-308 h-160 mb-30'>
-            <div className='text-center'>
-              <h1>Shop Now</h1>
-              <h2>Best Selling</h2>
+          <div className='border-blue-800 border-1 w-308 h-160 mb-30 font-[Inter]'>
+            <div className='text-center items-center'>
+              <h1 className='mb-2 font-medium text-[14px] text-neutral-400 pr-20'>SHOP NOW  </h1>
+              <h2 className='mb-30 pr-6 text-neutral-900 font-bold text-[24px]'>Best Selling</h2>
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6'>
+            <div className='grid grid-cols-4  gap-6 ml-10'>
               <div>
-                <img src={Sweetshirts} alt="" />
+                <img className='bg-neutral-100' src={Sweetshirts} alt="" />
                 <h1>Elegant Ebony Sweatshirts</h1>
-                <p>IN STOCK</p>
-                <p>$35.00</p>
+                <div className='flex'>
+                  <p>IN STOCK</p>
+                  <p>$35.00</p>
+                </div>
               </div>
               <div>
-                <img src={Sleek} alt="" />
+                <img className='bg-neutral-100' src={Sleek} alt="" />
                 <h1>Sleek and Cozy Black</h1>
-                <p>IN STOCK</p>
-                <p>$57.00</p>
+                <div className='flex'>
+                  <p>IN STOCK</p>
+                  <p>$57.00</p>
+                </div>
 
               </div>
               <div>
-                <img src={Tess} alt="" />
+                <img className='bg-neutral-100' src={Tess} alt="" />
                 <h1>Raw Black Tees</h1>
-                <p>IN STOCK</p>
-                <p>$19.00</p>
-
+                <div className='flex'>
+                  <p>IN STOCK</p>
+                  <p>$19.00</p>
+                  
+                </div>
               </div>
               <div>
-                <img src={Mockup} alt="" />
+                <img  className='bg-neutral-100'src={Mockup} alt="" />
                 <h1>MOCKUP Black</h1>
-                <p>IN STOCK</p>
-                <p>$30.00</p>
+                <div className='flex'>
+                  <p>IN STOCK</p>
+                  <p>$30.00</p>
+                </div>
               </div>
             </div>  
           </div>
