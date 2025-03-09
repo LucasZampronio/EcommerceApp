@@ -9,14 +9,14 @@ import Visa from '../Images/Icons/Visanocolor.svg';
 function Footer() {
   return (
     <section className="bg-white text-white font-[Inter]">
-      <div className="flex items-center justify-between h-40 p-8 bg-neutral-100 border-b-2 pl-34">
+      <div className="flex items-center justify-between h-50 p-8 bg-neutral-100 border-b-2 pl-34">
         <div>
-          <h1 className="text-xl font-extrabold  text-neutral-900">Join Our Newsletter</h1>
+          <h1 className="text-[24px] font-extrabold  text-neutral-900">Join Our Newsletter</h1>
           <h2 className="text-neutral-500 font-normal text-[14px] mt-4">We love to surprise our subscribers with occasional gifts.</h2>
         </div>
         <div className="flex items-center gap-4 mr-34">
-          <input type="text"placeholder="Your email address"className="px-4  py-2 w-90 border rounded-[6px] focus:outline-none focus:ring-2 focus:ring-neutral-500 text-neutral-900"/>
-          <button className="px-6 py-2.5 bg-neutral-900 text-neutral-100 text-[14px]  rounded-[6px] hover:bg-neutral-600 font-medium "> Subscribe</button>
+          <input type="text"placeholder="Your email address"className="px-4  py-2 w-90 border-2 border-neutral-200 rounded-[6px] focus:outline-none focus:ring-2 focus:ring-neutral-500 text-neutral-900"/>
+          <button className="px-6 py-2.5 bg-neutral-900 text-neutral-100 text-[14px]   rounded-[6px] hover:bg-neutral-600 font-medium "> Subscribe</button>
         </div>
       </div>
       {/*PARTE DE BAIXO DO FOOTER*/}
