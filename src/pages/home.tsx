@@ -68,37 +68,37 @@ function Home() {
             </div>
             <div className='grid grid-cols-4  gap-6 ml-10'>
               <div>
-                <img className='bg-neutral-100' src={Sweetshirts} alt="" />
-                <h1>Elegant Ebony Sweatshirts</h1>
+                <img className='bg-neutral-100 p-2' src={Sweetshirts} alt="" />
+                <h1 className='font-medium text-neutral-900 mt-6 mb-2'>Elegant Ebony Sweatshirts</h1>
                 <div className='flex'>
-                  <p>IN STOCK</p>
-                  <p>$35.00</p>
+                  <p className='border-1 border-neutral-200 pl-4 pr-3 mr-5  pt-1 pb-1 rounded-2xl text-[12px] font-medium text-neutral-900'>IN STOCK</p>
+                  <p className='font-normal text-[14px] text-neutral-600 mt-1'>$35.00</p>
                 </div>
               </div>
               <div>
-                <img className='bg-neutral-100' src={Sleek} alt="" />
-                <h1>Sleek and Cozy Black</h1>
+                <img className='bg-neutral-100 p-2' src={Sleek} alt="" />
+                <h1 className='font-medium text-neutral-900 mt-6 mb-2'>Sleek and Cozy Black</h1>
                 <div className='flex'>
-                  <p>IN STOCK</p>
-                  <p>$57.00</p>
+                  <p className='border-1 border-neutral-200 pl-4 pr-3 mr-5  pt-1 pb-1 rounded-2xl text-[12px] font-medium text-neutral-900'>IN STOCK</p>
+                  <p className='font-normal text-[14px] text-neutral-600 mt-1'>$57.00</p>
                 </div>
 
               </div>
               <div>
-                <img className='bg-neutral-100' src={Tess} alt="" />
-                <h1>Raw Black Tees</h1>
+                <img className='bg-neutral-100 p-2' src={Tess} alt="" />
+                <h1 className='font-medium text-neutral-900 mt-6 mb-2'>Raw Black Tees</h1>
                 <div className='flex'>
-                  <p>IN STOCK</p>
-                  <p>$19.00</p>
+                  <p className='border-1 border-neutral-200 pl-4 pr-3 mr-5  pt-1 pb-1 rounded-2xl text-[12px] font-medium text-neutral-900'>IN STOCK</p>
+                  <p className='font-normal text-[14px] text-neutral-600 mt-1'>$19.00</p>
                   
                 </div>
               </div>
               <div>
-                <img  className='bg-neutral-100'src={Mockup} alt="" />
-                <h1>MOCKUP Black</h1>
+                <img  className='bg-neutral-100 p-2 'src={Mockup} alt="" />
+                <h1 className='font-medium text-neutral-900 mt-6 mb-2'>MOCKUP Black</h1>
                 <div className='flex'>
-                  <p>IN STOCK</p>
-                  <p>$30.00</p>
+                  <p className='border-1 border-neutral-200 pl-4 pr-3 mr-5  pt-1 pb-1 rounded-2xl text-[12px] font-medium text-neutral-900'>IN STOCK</p>
+                  <p className='font-normal text-[14px] text-neutral-600 mt-1'>$30.00</p>
                 </div>
               </div>
             </div>  
