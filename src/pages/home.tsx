@@ -1,10 +1,10 @@
 
 import Header from '../components/Header'
+import Footer  from '../components/Footer'
 import RightArrow from '../Images/Icons/RightArrowWhite.svg'
 import Guyimage from '../Images/Hero Image.svg'
 import Star from '../Images/Estrela.svg'
 import Background from '../Images/Background.svg'
-import Footer  from '../components/Footer'
 import Truck from '../Images/Truck.svg'
 import Badge from '../Images/Badge.svg'
 import Shield from '../Images/Shield.svg'
@@ -26,8 +26,10 @@ function Home() {
               <h2 className='text-neutral-600 font-normal tex-[14px] mt-5'>Discover Our Newest Collection Today.</h2>
 
               <div className=' border-2 rounded-[6px] mt-16 gap-4 flex bg-neutral-900 w-50 hover:border-neutral-600 hover:bg-neutral-600 justify-center items-center pt-3 pb-3'>
-                <button className='font-medium text-[14px] text-neutral-100'>View Collection</button>
-                <img src={RightArrow} alt="" />
+                <a className='flex' href="/Login">
+                  <button className='font-medium text-[14px] text-neutral-100'>View Collection</button>
+                  <img className='ml-3' src={RightArrow} alt="" />
+                </a>
               </div>
             </div>
             <div>
