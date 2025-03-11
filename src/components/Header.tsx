@@ -1,7 +1,16 @@
 import cart from '../Images/Icons/Cart.svg'
 import logo from '../Images/Logomark.svg'
 import profile from '../Images/Icons/ProfileRounded.svg'
+import { useNavigate } from 'react-router-dom';
+
 function Header() {
+
+    const navigate = useNavigate();
+
+    const loginpage = () => {
+        navigate('/Login')
+    }
+
     return (
         <section className="w-full">
             <aside className="flex font-normal justify-center bg-neutral-900 h-10 font-[Inter]">
@@ -23,9 +32,9 @@ function Header() {
                         </nav>
                     </div>
                 </div>
-                <div className="flex items-center mr-40 gap-12  ">
-                    <img className='w-6 h-6' src={cart} alt="" />
-                    <img className='w-6 h-6' src={profile} alt="" />
+                <div className="flex items-center mr-40 gap-6 ">
+                    <div className='p-3 hover:bg-neutral-100 hover:border-1 border-1 border-white hover:rounded-xl'><img className='w-6 h-6' src={cart} alt="" /></div>
+                    <div className='p-3 hover:bg-neutral-100 hover:border-1 border-1 border-white hover:rounded-xl'><img onClick={loginpage} className='w-6 h-6' src={profile} alt="" /></div>
                 </div>
             </div>
         </section>
