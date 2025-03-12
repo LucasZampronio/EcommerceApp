@@ -13,8 +13,16 @@ import Sleek from '../Images/Sleek.svg'
 import Tess from '../Images/Tess.svg'
 import Sweetshirts from '../Images/Sweatshirts.svg'
 import CategoryImage from'../Images/Category Image.svg'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+
+  const navigate = useNavigate();
+
+  const listingpage = () => {
+      navigate('/Listing')
+  }
+
   return (
     <div>
         <Header />
@@ -24,13 +32,12 @@ function Home() {
             <div className='ml-37'>
               <h1 className='text-neutral-800 font-bold text-[32px]'>Fresh Arrivals Online</h1>
               <h2 className='text-neutral-600 font-normal tex-[14px] mt-5'>Discover Our Newest Collection Today.</h2>
-
-              <div className=' border-2 rounded-[6px] mt-16 gap-4 flex bg-neutral-900 w-50 hover:border-neutral-600 hover:bg-neutral-600 justify-center items-center pt-3 pb-3'>
-                <a className='flex' href="/Login">
-                  <button className='font-medium text-[14px] text-neutral-100'>View Collection</button>
-                  <img className='ml-3' src={RightArrow} alt="" />
-                </a>
-              </div>
+              <a onClick={listingpage} href="">
+                <div  className=' border-2 rounded-[6px] mt-16 gap-4 flex bg-neutral-900 w-50 hover:border-neutral-600 hover:bg-neutral-600 justify-center items-center pt-3 pb-3'>
+                    <button className='font-medium text-[14px] text-neutral-100'>View Collection</button>
+                    <img className='ml-3' src={RightArrow} alt="" />
+                </div>
+              </a>
             </div>
             <div>
             {/*IMAGENS PRIMEIRA SEÇÃO*/}

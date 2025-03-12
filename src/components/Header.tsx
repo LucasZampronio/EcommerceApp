@@ -11,6 +11,10 @@ function Header() {
         navigate('/Login')
     }
 
+    const homepage = () => {
+        navigate('/Home')
+    }
+
     return (
         <section className="w-full">
             <aside className="flex font-normal justify-center bg-neutral-900 h-10 font-[Inter]">
@@ -18,10 +22,12 @@ function Header() {
             </aside>
             <div className="flex  mt-5 mb-5 justify-between">
                 <div className="flex w-150 justify-end ">
-                    <div className="flex items-center gap-3 ">
-                        <img src={logo} className='w-12 h-12' alt="" />
-                        <h1 className='font-[Inter] text-neutral-900 capitalize font-extrabold text-[19px]'>Ecommerce</h1>
-                    </div>
+                    <a onClick={homepage}>
+                        <div className="flex items-center gap-3 border-1 border-white hover:bg-neutral-100 p-2 pl-3 pr-3 rounded-2xl ">
+                            <img src={logo} className='w-12 h-12' alt="" />
+                            <h1 className='font-[Inter] text-neutral-900 capitalize font-extrabold text-[19px]'>Ecommerce</h1>
+                        </div>
+                    </a>
                     <div className="flex  justify-start items-center">
                         <nav className="flex pl-26">
                             <ul className=' text-neutral-500 font-medium font-[Inter] text-[14px] flex justify-start gap-8'>
