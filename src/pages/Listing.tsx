@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import SearchBar from "../components/ClothingList/SearchBar";
 import Catalog from "../components/ClothingList/Catalog";
 import Sidebar from "../components/ClothingList/SideBar";
+import FiltroSelecionado from "../components/ClothingList/FiltersActive";
 
 export interface Product {
   id: number;
@@ -18,7 +19,7 @@ const ClothingListPage: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [searchResult, setSearchResult] = useState<string | null>(null);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-  const [priceRange, setPriceRange] = useState<number>(1000);
+  const [priceRange, setPriceRange] = useState<number>(0); // Start at 0
   const [maxPrice, setMaxPrice] = useState<number>(1000);
 
   useEffect(() => {
@@ -27,17 +28,16 @@ const ClothingListPage: React.FC = () => {
         const response = await fetch("http://localhost:3001/products");
         const data: Product[] = await response.json();
         
-        // Encontrar o maior preço para definir o range
+        // PEGAR O MAIOR PREÇO PARA DEFINIR NO FILTRO
         if (data && data.length > 0) {
           const highestPrice = Math.max(...data.map(p => parseFloat(p.price || "0")));
-          const roundedMax = Math.ceil(highestPrice / 100) * 100; // Arredonda para a centena superior
+          const roundedMax = Math.ceil(highestPrice / 100) * 100; // POSSO TIRAR ISSO FUTURAMENTE
           setMaxPrice(roundedMax);
-          setPriceRange(roundedMax);
         }
         
         setProducts(data);
       } catch (error) {
-        console.error("Erro ao buscar produtos:", error);
+        console.error("Error searching products", error);
       }
     };
     fetchProducts();
@@ -64,9 +64,9 @@ const ClothingListPage: React.FC = () => {
       selectedCategories.length === 0 ||
       (product.category && selectedCategories.includes(product.category));
     
-    // PARA BUSCAR PREÇO
+    // PARA BUSCAR PREÇO E COMEÇAR NO 0
     const productPrice = parseFloat(product.price || "0");
-    const matchesPrice = !isNaN(productPrice) && productPrice >= priceRange;
+    const matchesPrice = priceRange === 0 || (!isNaN(productPrice) && productPrice >= priceRange);
     
     return matchesSearch && matchesCategory && matchesPrice;
   });
@@ -79,21 +79,43 @@ const ClothingListPage: React.FC = () => {
     return found;
   };
 
-        {/*JUNTANDO TODOS OS COMPONENTES  */}
+  // REMOVER FILTROS
+  const removeSearchFilter = () => {
+    setSearchResult(null);
+  };
 
   return (
     <div className="flex flex-col md:flex-row py-8">
       <title>Catálogo de Roupas</title>
       
       <Sidebar 
-        selectedCategories={selectedCategories}
+        selectedCategories={selectedCategories} 
         onCategoryChange={handleCategoryChange}
-        priceRange={maxPrice}
+        priceRange={priceRange} 
+        maxPrice={maxPrice} 
         onPriceChange={handlePriceChange}
       />
       
       <div className="flex-1 flex flex-col">
-        <SearchBar onSearch={handleSearch} />
+        <div className="flex flex-col md:flex-row">
+          <FiltroSelecionado
+            selectedCategories={selectedCategories} 
+            localPriceRange={priceRange} 
+            maxPrice={maxPrice} 
+            removeFilter={(type, value) => {
+              if (type === "category") {
+                handleCategoryChange(value, false);
+              }
+            }}
+            resetPrice={() => setPriceRange(0)} 
+            searchQuery={searchResult}
+            removeSearchFilter={removeSearchFilter}
+          />
+          <SearchBar 
+            onSearch={handleSearch} 
+            onSearchFilterChange={removeSearchFilter}
+          />
+        </div>
         <Catalog 
           products={filteredProducts} 
           searchResult={searchResult} 

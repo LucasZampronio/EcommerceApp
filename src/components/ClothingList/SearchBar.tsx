@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 interface SearchBarProps {
   onSearch: (query: string) => boolean;
+  onSearchFilterChange: (query: string | null) => void; 
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
@@ -14,13 +15,21 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
       const found = onSearch(searchQuery);
       setNotFound(!found);
     }
+
+  };
+  {/*PRESSIONAR ENTER AO INVES DE BOTÃO */}
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" && searchQuery.trim()) {
+      const found = onSearch(searchQuery);
+      setNotFound(!found);
+    }
   };
 
   return (
     <div className="w-full p-4">
       <form onSubmit={handleSearch} className="flex flex-col md:flex-row gap-3">
         <input
-          type="text"placeholder="Search cloth"value={searchQuery}
+          type="text"placeholder="Search cloth"value={searchQuery} onKeyDown={handleKeyDown}
           onChange={(e) => {
             setSearchQuery(e.target.value);
             if (notFound) setNotFound(false);
