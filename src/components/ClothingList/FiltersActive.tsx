@@ -1,9 +1,9 @@
 import React from "react";
+import Close from "../../Images/Close.svg"
 
 interface FiltroSelecionadoProps {
   selectedCategories: string[];
   localPriceRange: number;
-  maxPrice: number;
   removeFilter: (type: string, value: string) => void;
   resetPrice: () => void;
   searchQuery: string | null;
@@ -13,71 +13,47 @@ interface FiltroSelecionadoProps {
 const FiltroSelecionado: React.FC<FiltroSelecionadoProps> = ({
   selectedCategories,
   localPriceRange,
-  maxPrice,
   removeFilter,
   resetPrice,
   searchQuery,
-  removeSearchFilter,
-}) => {
-  // MOSTRAR SEM CATEGORIAS E NO PREÇO 0
-  const hasActiveFilters = 
-    selectedCategories.length > 0 || 
-    localPriceRange > 0 || // MAIOR QUE ZERO MOSTRAR
-    searchQuery;
+  removeSearchFilter,}) => {
 
-  if (!hasActiveFilters) {
-    return null;
-  }
+
 
   return (
-    <div className="p-4">
-      <div className="mb-2 font-semibold">Filtros ativos:</div>
-      <div className="flex flex-wrap gap-2">
-        {/* FILTRO CATEGORIAS*/}
-        {selectedCategories.map((category) => (
-          <div
-            key={category}
-            className="px-3 py-1 bg-gray-200 rounded-full flex items-center"
-          >
-            <span className="mr-2">{category}</span>
-            <button
-              onClick={() => removeFilter("category", category)}
-              className="text-gray-500 hover:text-gray-700"
-            >
-              ×
-            </button>
-          </div>
-        ))}
+    <div className="w-full font-[Inter] p-4">
+      <div className="flex flex-col gap-2">
+        <h1 className="font-medium">Applied Filters:</h1>
+        
+        <div className="flex  flex-wrap gap-2">
+          {/* MOSTRAR APENAS O QUE SELECIONOU */}
+          {selectedCategories.map((category) => (
+            <div key={category} className="flex border-2 border-neutral-200  items-center gap-2   pr-3 pl-3 pt-2  pb-2 rounded-full text-sm">
+              <span>{category}</span>
+              <button onClick={() => removeFilter("category", category)}className="text-neutral-500 hover:text-neutral-700">
+                <img src={Close} alt="" />
+              </button>
+            </div>
+          ))}
 
-        {/* FILTRO PREÇOS */}
-        {localPriceRange > 0 && (
-          <div className="px-3 py-1 bg-gray-200 rounded-full flex items-center">
-            <span className="mr-2">
-              {localPriceRange === maxPrice 
-                ? `$${localPriceRange}` 
-                : `$${localPriceRange}`}
-            </span>
-            <button
-              onClick={resetPrice}
-              className="text-gray-500 hover:text-gray-700"
-            >
-              ×
-            </button>
-          </div>
-        )}
+          {/* SÓ MOSTRAR O PREÇO SE TIVER ATIVO*/}
+          {localPriceRange > 0 && (
+            <div className="flex items-center gap-1 border-2 border-neutral-200 px-3 py-1 rounded-full text-sm">
+              <span className="">$ {localPriceRange}</span>
+              <button onClick={resetPrice} className="text-neutral-500 hover:text-neutral-700">
+                <img src={Close} alt="" />
+              </button>
+            </div>
+          )}
 
-        {/* FILTRO SERACH*/}
-        {searchQuery && (
-          <div className="px-3 py-1 bg-gray-200 rounded-full flex items-center">
-            <span className="mr-2">Busca: {searchQuery}</span>
-            <button
-              onClick={removeSearchFilter}
-              className="text-gray-500 hover:text-gray-700"
-            >
-              ×
-            </button>
-          </div>
-        )}
+          {/* SÓ MOSTRAR A BUSCA SE TIVER ALGUMA BUSCA*/}
+          {searchQuery && (
+            <div className="flex items-center gap-1 bg-neutral-100 px-3 py-1 rounded-full text-sm">
+              <span>Search: {searchQuery}</span>
+              <button onClick={removeSearchFilter} className="text-neutral-500 hover:text-neutral-700">×</button>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

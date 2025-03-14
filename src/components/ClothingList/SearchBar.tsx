@@ -1,13 +1,17 @@
 import React, { useState } from "react";
+import Search from '../../Images/Icons/Search.svg'
 
 interface SearchBarProps {
   onSearch: (query: string) => boolean;
-  onSearchFilterChange: (query: string | null) => void; 
+  OnSearchFilterChange: (query: string | null) => void; 
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [notFound, setNotFound] = useState<boolean>(false);
+
+
+    {/*BUSCAR ITEM PELO NOM E */}
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,20 +30,17 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   };
 
   return (
-    <div className="w-full p-4">
-      <form onSubmit={handleSearch} className="flex flex-col md:flex-row gap-3">
-        <input
-          type="text"placeholder="Search cloth"value={searchQuery} onKeyDown={handleKeyDown}
-          onChange={(e) => {
-            setSearchQuery(e.target.value);
-            if (notFound) setNotFound(false);
-          }}
-          className="flex-grow p-2 border rounded-md"
-        />
-        <button type="submit"className="bg-neutral-600 text-white px-4 py-2 rounded-md hover:bg-neutral-700 transition-colors"> Search </button>
+    <div className="w-120 font-[Inter] h-10 pb-1 pt-1 border-2 rounded-[9px] mr-4 items-center">
+      <form onSubmit={handleSearch} className="flex flex-col md:flex-row gap-3 items-center">
+      {/*PESQUISAR COMO TIRAR A BORDA DO INPUT*/}
+      <button type="submit" className="text-white p-2 m-0 rounded-md hover:bg-neutral-700 transition-colors">
+        <img src={Search} className="" alt="Searchicon" />
+      </button>
+          <input className="flex-grow m-0 outline-none" type="text"placeholder="Search products" value={searchQuery} onKeyDown={handleKeyDown} onChange={(e) => {setSearchQuery(e.target.value);if (notFound) setNotFound(false);}}/>
       </form>
+      {/* COLOCAR A MSG DE ERRO NO COMPONENTE DE FILTRO DEPOIS*/}
       {notFound && (
-        <p className="text-red-500 mt-2">
+        <p className=" ml-20 text-red-600 flex mt-2">
           No product with this name.
         </p>
       )}

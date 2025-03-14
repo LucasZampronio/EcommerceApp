@@ -3,6 +3,8 @@ import SearchBar from "../components/ClothingList/SearchBar";
 import Catalog from "../components/ClothingList/Catalog";
 import Sidebar from "../components/ClothingList/SideBar";
 import FiltroSelecionado from "../components/ClothingList/FiltersActive";
+import RightArrow from '../Images/Chevron Right.svg'
+import Header from "../components/Header";
 
 export interface Product {
   id: number;
@@ -19,7 +21,7 @@ const ClothingListPage: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [searchResult, setSearchResult] = useState<string | null>(null);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-  const [priceRange, setPriceRange] = useState<number>(0); // Start at 0
+  const [priceRange, setPriceRange] = useState<number>(0); //COMEÇA ZERO
   const [maxPrice, setMaxPrice] = useState<number>(1000);
 
   useEffect(() => {
@@ -85,41 +87,35 @@ const ClothingListPage: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row py-8">
-      <title>Catálogo de Roupas</title>
-      
-      <Sidebar 
-        selectedCategories={selectedCategories} 
-        onCategoryChange={handleCategoryChange}
-        priceRange={priceRange} 
-        maxPrice={maxPrice} 
-        onPriceChange={handlePriceChange}
-      />
-      
-      <div className="flex-1 flex flex-col">
-        <div className="flex flex-col md:flex-row">
-          <FiltroSelecionado
-            selectedCategories={selectedCategories} 
-            localPriceRange={priceRange} 
-            maxPrice={maxPrice} 
-            removeFilter={(type, value) => {
-              if (type === "category") {
-                handleCategoryChange(value, false);
-              }
-            }}
-            resetPrice={() => setPriceRange(0)} 
-            searchQuery={searchResult}
-            removeSearchFilter={removeSearchFilter}
-          />
-          <SearchBar 
-            onSearch={handleSearch} 
-            onSearchFilterChange={removeSearchFilter}
+    <div className="flex flex-col">
+      <Header />
+      <section className='bg-neutral-100 h-15 items-center flex font-[Inter] '>
+        <div className='items-center ml-34'>
+          <div className='flex'>
+            <p className='text-neutral-500  font-medium'>Ecommerce</p>
+            <img className="ml-1 mr-1" src={RightArrow} alt="" />
+            <p className='text-neutral-900 font-medium'>Search</p>
+          </div>
+        </div>
+      </section>
+
+      <div className="flex flex-col md:flex-row py-8">
+        <Sidebar selectedCategories={selectedCategories} onCategoryChange={handleCategoryChange}priceRange={priceRange} maxPrice={maxPrice} onPriceChange={handlePriceChange}/>
+        <div className="flex-1 flex flex-col">
+          <div className="flex flex-col md:flex-row">
+            <FiltroSelecionado selectedCategories={selectedCategories} localPriceRange={priceRange} 
+              removeFilter={(type, value) => {
+                if (type === "category") {
+                  handleCategoryChange(value, false);
+                }
+              }}resetPrice={() => setPriceRange(0)} searchQuery={searchResult}removeSearchFilter={removeSearchFilter}
+            />
+            <SearchBar onSearch={handleSearch} OnSearchFilterChange={removeSearchFilter}
+            />
+          </div>
+          <Catalog products={filteredProducts} searchResult={searchResult} 
           />
         </div>
-        <Catalog 
-          products={filteredProducts} 
-          searchResult={searchResult} 
-        />
       </div>
     </div>
   );
