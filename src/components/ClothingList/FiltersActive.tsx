@@ -48,9 +48,11 @@ const FiltroSelecionado: React.FC<FiltroSelecionadoProps> = ({
 
           {/* SÓ MOSTRAR A BUSCA SE TIVER ALGUMA BUSCA*/}
           {searchQuery && (
-            <div className="flex items-center gap-1 bg-neutral-100 px-3 py-1 rounded-full text-sm">
+            <div className="flex items-center gap-1 border-2 border-neutral-200 px-3 py-1 rounded-full  text-sm">
               <span>Search: {searchQuery}</span>
-              <button onClick={removeSearchFilter} className="text-neutral-500 hover:text-neutral-700">×</button>
+              <button onClick={removeSearchFilter} className="text-neutral-500 hover:text-neutral-700">
+                <img src={Close} alt="" />
+              </button>
             </div>
           )}
         </div>

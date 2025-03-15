@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ArrowRight from '../../Images/Icons/RightSign.svg'
+import ArrowLeft from '../../Images/Icons/LeftSign.svg'
 
 interface Product {
   id: number;
@@ -23,7 +25,7 @@ const Catalog: React.FC<CatalogProps> = ({ products, searchResult }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = Math.ceil(products.length / ITEMS_PER_PAGE);
 
-  // Calculate the products to show on the current page
+  // CALCULO PAGINA
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
   const currentProducts = products.slice(startIndex, endIndex);
@@ -43,8 +45,8 @@ const Catalog: React.FC<CatalogProps> = ({ products, searchResult }) => {
   return (
     <div className="p-4 font-[Inter]">
       {searchResult && (
-        <h2 className="text-xl mb-4">
-          Resultados para: <span className="font-bold">{searchResult}</span>
+        <h2 className="text-[16px] font-medium mb-4">
+          Results for: <span className="font-bold">{searchResult}</span>
         </h2>
       )}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full gap-6">
@@ -62,19 +64,19 @@ const Catalog: React.FC<CatalogProps> = ({ products, searchResult }) => {
               />
             </div>
             <div className="p-4">
-              <h3 className="font-semibold text-lg">{product.name}</h3>
-              <div className="mt-2 flex justify-between items-center">
+              <h3 className="font-[Inter] text-[18px] font-medium mt-5">{product.name}</h3>
+              <div className="mt-2 flex gap-8 items-center mb-4">
                 <div>
-                  <p className="text-sm text-neutral-600">IN STOCK</p>
+                  <p className="text-sm text-neutral-900 border-2 p-1 pl-5 rounded-3xl border-neutral-200 pr-5">IN STOCK</p>
                 </div>
-                <p className="font-bold text-lg">${product.price}</p>
+                <p className="font-[Inter] text-[18px] font-normal text-neutral-600">${product.price}</p>
               </div>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Pagination Controls */}
+      {/* BOTÃO PAGINA */}
       {totalPages > 1 && (
         <div className="mt-8 flex justify-center items-center space-x-2">
           <button
@@ -86,10 +88,8 @@ const Catalog: React.FC<CatalogProps> = ({ products, searchResult }) => {
                 : "bg-neutral-900 text-white hover:bg-neutral-800"
             }`}
           >
-            Previous
+          <img src={ArrowLeft} alt="" />
           </button>
-          
-          {/* Page Numbers */}
           {[...Array(totalPages)].map((_, index) => (
             <button
               key={index + 1}
@@ -113,7 +113,7 @@ const Catalog: React.FC<CatalogProps> = ({ products, searchResult }) => {
                 : "bg-neutral-900 text-white hover:bg-neutral-800"
             }`}
           >
-            Next
+            <img src={ArrowRight} alt="" />
           </button>
         </div>
       )}
