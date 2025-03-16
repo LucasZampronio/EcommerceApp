@@ -30,7 +30,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   };
 
   return (
-    <div className="w-120 font-[Inter] h-10 pb-10 pt-1 border-2 rounded-[6px] pl-2 border-neutral-200  mr-4 items-center">
+    <div className="w-120 font-[Inter] h-10 pb-10 pt-1 border-2 rounded-[6px] pl-2 border-neutral-200  mr-34 items-center">
       <form onSubmit={handleSearch} className="flex flex-col md:flex-row gap-3 items-center">
       {/*PESQUISAR COMO TIRAR A BORDA DO INPUT*/}
       <button type="submit" className="text-white p-2 m-0 rounded-md hover:bg-neutral-700 transition-colors">

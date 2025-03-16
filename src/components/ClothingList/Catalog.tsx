@@ -43,7 +43,7 @@ const Catalog: React.FC<CatalogProps> = ({ products, searchResult }) => {
   }
 
   return (
-    <div className="p-4 font-[Inter]">
+    <div className="p-4 font-[Inter] mr-30">
       {searchResult && (
         <h2 className="text-[16px] font-medium mb-4">
           Results for: <span className="font-bold">{searchResult}</span>
@@ -78,42 +78,25 @@ const Catalog: React.FC<CatalogProps> = ({ products, searchResult }) => {
 
       {/* BOTÃO PAGINA */}
       {totalPages > 1 && (
-        <div className="mt-8 flex justify-center items-center space-x-2">
+        <div className="mt-12 flex justify-center items-center border-2 border-neutral-200 rounded-md w-40 ml-70 gap-2">
           <button
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
-            className={`px-4 py-2 rounded-md ${
-              currentPage === 1
-                ? "bg-neutral-300 text-neutral-500 cursor-not-allowed"
-                : "bg-neutral-900 text-white hover:bg-neutral-800"
-            }`}
+            className="px-4 py-2 rounded-md"
           >
-          <img src={ArrowLeft} alt="" />
+            <img src={ArrowLeft} className="hover:bg-neutral-200 hover:rounded-2xl hover:p-1" alt="Button Left" />
           </button>
-          {[...Array(totalPages)].map((_, index) => (
-            <button
-              key={index + 1}
-              onClick={() => handlePageChange(index + 1)}
-              className={`px-4 py-2 rounded-md ${
-                currentPage === index + 1
-                  ? "bg-neutral-900 text-white"
-                  : "bg-neutral-100 text-neutral-900 hover:bg-neutral-200"
-              }`}
-            >
-              {index + 1}
-            </button>
-          ))}
+          
+          <span className=" bg-neutral-200 mt-1 mb-1 p-1 pr-4 pl-4 rounded-[4px]">
+            {currentPage}
+          </span>
 
           <button
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
-            className={`px-4 py-2 rounded-md ${
-              currentPage === totalPages
-                ? "bg-neutral-300 text-neutral-500 cursor-not-allowed"
-                : "bg-neutral-900 text-white hover:bg-neutral-800"
-            }`}
+            className="px-4 py-2 rounded-md"
           >
-            <img src={ArrowRight} alt="" />
+            <img src={ArrowRight} className="hover:bg-neutral-200 hover:rounded-2xl hover:p-1" alt="Button Right" />
           </button>
         </div>
       )}

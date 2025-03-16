@@ -38,7 +38,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   };
 
   return (
-    <div className="w-full md:w-64 h-115 mr-4 p-4 font-[Inter] border-2 rounded-lg border-neutral-200 ml-30">
+    <div className="w-full md:w-64 h-115 mr-4 p-4 font-[Inter] border-2 rounded-lg border-neutral-200 ml-35">
       {/* FILTRO DAS CATEGORIAS */}
       <div className="mb-4">
         <h3 className="font-semibold mb-5 mt-2">Categories</h3>

@@ -5,6 +5,7 @@ import Sidebar from "../components/ClothingList/SideBar";
 import FiltroSelecionado from "../components/ClothingList/FiltersActive";
 import RightArrow from '../Images/Chevron Right.svg'
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export interface Product {
   id: number;
@@ -90,7 +91,7 @@ const ClothingListPage: React.FC = () => {
     <div className="flex flex-col">
       <Header />
       <section className='bg-neutral-100 h-15 items-center flex font-[Inter] '>
-        <div className='items-center ml-34'>
+        <div className='items-center ml-36'>
           <div className='flex'>
             <p className='text-neutral-500  font-medium'>Ecommerce</p>
             <img className="ml-1 mr-1" src={RightArrow} alt="" />
@@ -108,15 +109,13 @@ const ClothingListPage: React.FC = () => {
                 if (type === "category") {
                   handleCategoryChange(value, false);
                 }
-              }}resetPrice={() => setPriceRange(0)} searchQuery={searchResult}removeSearchFilter={removeSearchFilter}
-            />
-            <SearchBar onSearch={handleSearch} OnSearchFilterChange={removeSearchFilter}
-            />
+              }}resetPrice={() => setPriceRange(0)} searchQuery={searchResult}removeSearchFilter={removeSearchFilter}/>
+            <SearchBar onSearch={handleSearch} OnSearchFilterChange={removeSearchFilter}/>
           </div>
-          <Catalog products={filteredProducts} searchResult={searchResult} 
-          />
+          <Catalog products={filteredProducts} searchResult={searchResult} />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
