@@ -11,6 +11,7 @@ interface Product {
   price: string;
   imageUrl: string;
   ownerId?: string;
+  stockDetails?: { stock: number }[];
 }
 
 interface CatalogProps {
@@ -67,7 +68,10 @@ const Catalog: React.FC<CatalogProps> = ({ products, searchResult }) => {
               <h3 className="font-[Inter] text-[18px] font-medium mt-5">{product.name}</h3>
               <div className="mt-2 flex gap-8 items-center mb-4">
                 <div>
-                  <p className="text-sm text-neutral-900 border-2 p-1 pl-5 rounded-3xl border-neutral-200 pr-5">IN STOCK</p>
+                  <p className="text-sm border-2 p-1 pl-5 rounded-3xl border-neutral-200 pr-5">
+                    {product.stockDetails?.some(detail => detail.stock > 0) && "IN STOCK"}
+                    {!product.stockDetails?.some(detail => detail.stock > 0) && "NO STOCK"}
+                  </p>
                 </div>
                 <p className="font-[Inter] text-[18px] font-normal text-neutral-600">${product.price}</p>
               </div>

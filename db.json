@@ -230,8 +230,8 @@
             "category": "Electronics",
             "detail": "True wireless earbuds with active noise cancellation. Features include touch controls, voice assistant support, and 24-hour battery life with charging case. Perfect for music lovers and commuters.",
             "stockDetails": [
-                { "color": "white", "size": "S", "stock": 5 },
-                { "color": "black", "size": "S", "stock": 4 }
+                { "color": "white", "size": "S", "stock": 0 },
+                { "color": "black", "size": "S", "stock": 0 }
             ],
             "id": 15
         },
@@ -243,8 +243,8 @@
             "category": "Beach",
             "detail": "Quick-drying beach towel made from soft, absorbent material. Features include sand-resistant fabric and compact design. Perfect for beach trips and pool days.",
             "stockDetails": [
-                { "color": "blue", "size": "M", "stock": 8 },
-                { "color": "pink", "size": "M", "stock": 6 }
+                { "color": "blue", "size": "M", "stock": 0 },
+                { "color": "pink", "size": "M", "stock": 0 }
             ],
             "id": 16
         }
