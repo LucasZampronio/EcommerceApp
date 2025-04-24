@@ -1,9 +1,9 @@
 {
     "products": [
         {
-            "name": "Camisa",
+            "name": "T-shirt",
             "price": "15.00",
-            "imageUrl": "https://s3-alpha-sig.figma.com/img/ea93/867c/9c00620075282720d457a68b74f69a40?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=cbDTlp4AqvmOGD7tveJmH6hbm0HW-cFJR4OyHJPOPmvE-~dg0zDv6ZQ3ZjgSdPTIbiLN6nirMeadaSjqsIpXEa1NXy4kl-qWoKG1DOqVp2yURrvBdwcCpU-Mx2weG4AHNnP3799hXR96VDqiTLD80-cIP-oT2mNm7QxTH3tCHljt2IcVl7yWFQmFaUz5f5~2Tvso8JP8fw-Qv-ZtDWvBEgDDtW6QNm3qztxVDssS9BuPde4pQW5GRJlgrQAjwRuE7yUD3nJJ~61k9QCHafWbISeiKshgLNCatOOxLpiNmwUODlu6gwa~ckQt~qCJeISYAb9bW1mECrbHyNQUlucjKg__",
+            "imageUrl": "https://s3-alpha-sig.figma.com/img/7f43/9f88/3d50177232901e42884d41bd843ec040?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TtdCbX9SOrC2qHnQRbyHGbLsUNvC36fWkJksqrqUJu7P62Qo~tlqUjSPvQtbQUl4p2rid7YvbTULyJ2Lvc93ZUxwjsTzbrAkpQ2cceN-hyzXs8cCb~v-PN-vai98jcioCBz9c83XqRbR8Kk6WlL1xcPC34nGmw-Oas~a4EG5KVnXohkWUWDw7MvV~9bhVWIF9pox1cXcB~AZf8oTci-KoYu1mG5VmoCgyNA9tEu4cl1tMlKS8FGCtUn8z74FuccCPBEPSiRtCp6v3DplYavSuhqwPWTLyzot5vtdVnFdOwgVAf~QB7nQ0-IYBEml4AX6OzLdL0aiqBB9sOcfuUV5JA__",
             "ownerId": "user_2srjTUum0mAKdBMVpcfyjNkjEaj",
             "category": "Trousers",
             "detail": "Discover our premium collection of men's trousers, crafted with the finest materials for ultimate comfort and style. These versatile pants feature a modern slim fit, perfect for both casual and formal occasions. Made from high-quality cotton blend, they offer breathability and durability while maintaining a polished look throughout the day.",
@@ -27,9 +27,9 @@
             "id": 2
         },
         {
-            "name": "Shoe",
+            "name": "Graphic Tee",
             "price": "15.00",
-            "imageUrl": "https://s3-alpha-sig.figma.com/img/cc73/aa4a/0e8af69dd454db02bbfa89c8b3be4f4a?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=PQVar8aODwCxH~kzLRLNQVy9lTG10FS7XscelkyCBzR7-5fqO6-5t5NnlC6HtOtolrRzW0GQUayerMlIPDfIPwM1lp2c8BCaLqgH8KyNB8ue3wTqGtb1JurCsHsbcODVLFy7QuA7d9reOzrb~DNLwapwJXDcA~iyAhXIE-ppp7lswNPIdQYg0DHzaGC1ACYzLbxonvy0B-Xuji5yaYsSQeLzPFGbDuIznXsJyjZRKte87gE6jEzCOh99NlxbBUc35eaBxpyt5KkQBSuOk~vbJ-nrshLUV8PEcItB7TFK9tPGn2RR00dJlQyZQCFVtS2fnXa5-fao0oeQl6U--NfKxw__",
+            "imageUrl": "https://s3-alpha-sig.figma.com/img/ea93/867c/9c00620075282720d457a68b74f69a40?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MnyL0WOocM8NLTcpT~tscyKLZRVzYf6IFXRjzBIZRJk5pf5ggBXs2lQ6Yfg~8YDj4lj-eTNOvskJgWZFTOlWYNbyPoak86RJgeT-fvTx0eKBCh9RwGEE10Fk~ea69Y04LFpi5B8~OfzK8MIf0BpejGY6uMLs3QHdiuW8flF7JRVsKPPPgo20Qs42yItDAATJES58v7SoRXys36bnUyUOmBqbby2YAHNezHgwbUEntZbmt4KubNuWcaH-Z-peBEq6pHUz5WgvHLMgVDLKzbLSolgaTfXN5yJH6RK1ZiW5fPcOR4oDL00jfT5OT3QQqYMLvSILyO842sYoLrvMBHJpzQ__",
             "ownerId": "user_2srjTUum0mAKdBMVpcfyjNkjEaj",
             "category": "Shoe",
             "detail": "Step into comfort with our classic leather shoes, designed for both style and durability. These timeless shoes feature genuine leather uppers, cushioned insoles, and sturdy rubber soles for all-day comfort. Perfect for business casual or formal occasions, they provide excellent support while maintaining a sophisticated appearance.",
@@ -53,9 +53,9 @@
             "id": 3
         },
         {
-            "name": "Hat",
+            "name": "Basic Tee",
             "price": "15.00",
-            "imageUrl": "https://s3-alpha-sig.figma.com/img/7f43/9f88/3d50177232901e42884d41bd843ec040?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=tHOQaSm45KOm-vViVo0fcUTwPaHvuwNSJ99rYbNEPqbQ8I8jaZ4rYypJj865Uae76t0m1pWk72AAkp6X5oPDZrQGz3WqxFuaOap-NuWfP3Hsn8yqc8aGLFR9NX2du1jPfEdReJWwptkmU~u9RgWBMK768MHZCwGpAsADvbxSVECVyMdb-30BM7uCKpjvTq01I4ail-4O2wM5nGB6sIiCQu1uKf9cZVGWTmHXWlIU96Y4KrZfxXPJLLGXYPTUcplNnh6dUMQ~ieR63bCipdbT-MFL8UbXdT7acndfIq9zqygnN1z8VKX-YPUX3iOa-Y6crZi-qn8Gs0q5tPBpQ2BI~Q__",
+            "imageUrl": "https://s3-alpha-sig.figma.com/img/cc73/aa4a/0e8af69dd454db02bbfa89c8b3be4f4a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KLHMB8xLT59JiB4XGrblvXiTZZZvGRfO6QmRcteAb3AYO06tPX8Vt8pFtI9B0LmiGPhVaqkgQtowCWxanCwQSYbZe4tMUPqFUmoO0vTfssKVjHV72q84CDkI~BZOjxb6j~-XEOWYZSVIe3kJ0zqL2FV8~f9x-WMMYFVKc4aXwpoykY9QW92mb3cnHqfgLMygFDipxEfScVSfwk1sVlK1c~MaIAhU8cyYHYkgHgjL71XVPyB8hNVQG38YWFCUlZfh2dKrqbgInIV9cP54T-Wp9lN5cy4AIjrpws3srA0oK6y~PBmzcoTkztaxfkpu-cPkKIjGeIinESaGtesvf75Oxg__",
             "ownerId": "user_2srjTUum0mAKdBMVpcfyjNkjEaj",
             "category": "Hat",
             "detail": "Top off your look with our stylish collection of hats. Made from premium materials, these hats offer both protection from the elements and a fashionable statement piece. The adjustable fit ensures comfort for all head sizes, while the classic design makes it a versatile accessory for any outfit.",
@@ -75,7 +75,7 @@
         {
             "name": "Thermos",
             "price": "15.00",
-            "imageUrl": "https://s3-alpha-sig.figma.com/img/dbac/8aa5/e758714d6dd93e24df2731f70e55e10c?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fZD9YrbUGi14HFaXuTjXulUQtIOCrzBqcye3qokZpQErSC-0d3n5s5W2W86b20yCzq645fR7~9-kXRiwRvZCVdaaF3D26fLhdrZfFOvlcI~M7CUyePKJ~QUT~ucAMhjaiekZ-KG1XmMhxGSE3Z6zwx1g7KVNq-3UoBeaUlXWaD6onPgvJ4ZBIuuM5CNf~pC6e68xLgcSzd-ZqjDyZhxEPwhSTnvl7pyoElTzgHksInzB4qRZtKaOQpsm9YpAsf2MP8mUTqs6u32ixUcYoUAJtNg0geqRgXXcbvDlagXVgzQSJjTI13i8IYJjbhCorHpdGmeMnalRtKIFl-iKeGEOQw__",
+            "imageUrl": "https://s3-alpha-sig.figma.com/img/dbac/8aa5/e758714d6dd93e24df2731f70e55e10c?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=lOLO0p-ddjKqUYjcEq6yjangdQMq86Nkmaja6nanJDYfw80mN3cTrfZUl00NKacENJqsE91sL623fptidko1SGCWlo4VuB9c2M-SR0~NgXdhGKR8Hm6bCLwhXi3sCBEdu3624QmsSpYMi~Z5X7wtw~Ibja-aPHgc7cretyIxTnB0PBqJ5I00n8PH4GhxMx3Ag3K2SiKUNByGGilh9CdpaG8OuUSlZwfRnpfRppojsAmsX7R3B6xzz~qfW4rRQDEykybhHX-EtzqpJO3PvY6DDP~q4LfGQzUrGSfOJJFON54mb9Yvl-rML4FV5Exlgll0MH9Yp687FgZFY3ORcjdwmQ__",
             "ownerId": "user_2srjTUum0mAKdBMVpcfyjNkjEaj",
             "category": "Thermos",
             "detail": "Keep your beverages at the perfect temperature with our premium thermos. Featuring double-wall vacuum insulation, this thermos maintains hot drinks hot and cold drinks cold for up to 24 hours. The durable stainless steel construction and leak-proof design make it ideal for daily use, whether at work, school, or outdoor adventures.",
@@ -95,7 +95,7 @@
         {
               "name": "Thermos",
               "price": "15.00",
-              "imageUrl": "https://s3-alpha-sig.figma.com/img/0089/4ce1/a46321deb8faf2c7f96de69b04386982?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~FlytJpCtnYy2UAPLCNnnMv8XapHrzr9WJh12z0NkW~Olkg~zKrsCsDHZWoUvqFC4qMYIZmqsn-S1otZOFPpJx4QdyP80IuhRhj3o4EwGFCjmswbYfqeY9-~JSMLd0kHyoxYtLIx19xBcbyu~lLhM2oY90A42JPhubWWRKcOUZPMNC-iTuVphyAZkYIL9z5HAGc6cfI8lzoMVmWu~rpA79a2tYttYB1eiMKoQY3JiLi4ylWMkdgCtj70nEMG68Nb6FIomwXTHnMZNyXcCpobRZPmGmG1JSPjd8wvHYI5-FzMkUVL7zNmsldpVXYxNC5X~4ojf4QO~mp66udog04jQ__",
+              "imageUrl": "https://s3-alpha-sig.figma.com/img/0089/4ce1/a46321deb8faf2c7f96de69b04386982?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=DDmh1JFmKxvuqHQc44XLdByR-vD~p1Nex~jVmK6BCDIG51TipcUKDUnlkLhBdCdFHlrSvQ~Yf4sbln4M-8333ccHC9DFi4wPqETliOVnfeemEsc3LahX3WGIlpobyx16DEVG-rwMkxeB1r9KRtedOOplgzARs~wvDb469H3odDb7hU0xM~BduJQCduOAJtBzHZNP1trWzi2Z9Wn2AhDa~ssmTtuwXpB7OphjKQqjeVnKkRxB5uthSlQTClgxahkE~3fcG7Co3Tg8cezyjCMYclAbu33rP~QKM8~4eRK3-LNLY4kGx9eCqI816ZxdIJr7-Yxdkd2ZZVpxKRjIrA0Z2w__",
             "ownerId": "user_2srjTUum0mAKdBMVpcfyjNkjEaj",
             "category": "Thermos",
             "detail": "Keep your beverages at the perfect temperature with our premium thermos. Featuring double-wall vacuum insulation, this thermos maintains hot drinks hot and cold drinks cold for up to 24 hours. The durable stainless steel construction and leak-proof design make it ideal for daily use, whether at work, school, or outdoor adventures.",
@@ -115,7 +115,7 @@
         {
             "name": "Leather Wallet",
             "price": "45.00",
-            "imageUrl": "https://s3-alpha-sig.figma.com/img/3b7b/691a/04200a00273834b0da44eaca1a012086?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UYIc1U9INyX0b3oCpJ7KB4wyxsqJjf1E-tZWMScCzYQCGauNb-whF1SRaSIZCm-wt0DgeEFoZjElfLkGlS97c61MYIWfexSK-c3slpYhh3PH7f57TdvLv77fwlodCPc7ZPP2q3XdY7ROjTpMEU5643QAbV1wMThDVpy~CgDs3HO6dvDIp9gFQfPFvvzPQrWXLmyFrujcjUuHM~gXoDPlM0TQFs9VgUvEi3xzxO8M1UwEvkKhmiM0iZrkEEP7k--0b4QwC9rP44WUZzHkDL1bFjpLlgxtK0MFrWzDyhgw05n4mJ5ByayTZQfweDGQmRRGwM0V6m-5-mS8p7a3o2tyfg__",
+            "imageUrl": "https://s3-alpha-sig.figma.com/img/3b7b/691a/04200a00273834b0da44eaca1a012086?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ABttKfSSmNJIiaCEXQ3Omq~OBhPJ2Sx9LHGl38kFg8N4R9BPZJeGgf3~~EO45yUADzzzYdU4eSE9Ito77Wh5HD1hP8xmU8bfINl8CjKJwduhSAcg6L3XIMz4qLyabAOrizkTEim1arp8oiwuiNgZkH6nhUZAO9VDGysBnGpwNz04pf41opEPTPxeq2kxg1vO65mEUg2rsaBdw5h40LDhWsBOmxDNzWk~BbpcXvgfBoEfmj7uGhK51PvM~CeCWth9SvN-s6aFvzXLgMK54fVW6SvsZBMwAMkRcZ0j6uPSEknqUbe1NSjBTF8~GYn~8~fd58pe0vGxlGrgZhCJFo9VsQ__",
             "ownerId": "user_2srjTUum0mAKdBMVpcfyjNkjEaj",
             "category": "Accessories",
             "detail": "Premium leather wallet with multiple card slots and a coin pocket. Made from genuine leather, this wallet combines style with functionality. Perfect for everyday use, it features RFID protection and a slim design that fits comfortably in your pocket.",
@@ -130,7 +130,7 @@
         {
             "name": "Running Shoes",
             "price": "89.99",
-            "imageUrl": "https://s3-alpha-sig.figma.com/img/6cc5/4b32/7a503fd4e0b047c0417fdc1b0d0b0a79?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=PsO87xsULScR5lmzvUDHpwWo1I1YuIsbAsBVAJZZRYzycwYruQ0vgi7QOmHWy-MXnwM5I~bBoApl~ynFxfL7JnKpigMDIYVxvauUeTgbB6tV6bb0UTMiXVj~q-V76LrmN6bYE-5f-PcVty0h9rmvLAF9ltXxnEaSmJO13qT-kxMoPyHTq9erFgcnU84PEpjmSDsOtLvZnwjd1b9h9DzUd9Lym7D~4GuDzPOAyJBA6XhZx7bbae6JH1xfvViiREGWvCsbk8Gk7GIjTmpdgIbm5Z8jCKcHyYDaZ2h2N1wILu5F0xECIN-cAFuHNuxL4HzTIRhQcWF~jOB3cEhMNO6J2w__",
+            "imageUrl": "https://s3-alpha-sig.figma.com/img/6cc5/4b32/7a503fd4e0b047c0417fdc1b0d0b0a79?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ay3KUwdPqmBMSStRCPkvgFsKTuThFoB7DtVf7QHcFtlyOeOjG~DuxBmZpRrTlWNk1zXK-eQnsnuAM8Af3zMhai1--VFQBOtz4aUUfEtZqkuV-y7acLwQ5BqW4SXz5~V6ODz4LsqdQPlSpqe~7x~1k-LS1VGX-mxg3ibn3u9U15ddUhue1nMHCgDgbvAAYucUGDWsTfFcEPW2A3t0Kx8pBtYRm2Q~Kv1MO~UuHinbVOg4afVF1EyX3fMCzcLVlaN~yuwUaD8aEdZI91JBAHUR4~F5hMskF7IMANrNG0PxZsp8gRQc~qQi2xS96WpKC7XEfcYP2uPxsXIY6iZs-CFf3Q__",
             "ownerId": "user_2srjTUum0mAKdBMVpcfyjNkjEaj",
             "category": "Shoe",
             "detail": "Professional running shoes designed for maximum comfort and performance. Features include breathable mesh upper, cushioned midsole, and anti-slip sole. Perfect for runners of all levels.",
@@ -145,7 +145,7 @@
         {
             "name": "Denim Jacket",
             "price": "75.00",
-            "imageUrl": "https://s3-alpha-sig.figma.com/img/b72a/6f3c/9b0fc31bc6ec3e92c8297ba178f4d96a?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ox7wawAcyXBI77kmTWpPYzBfJLZlIJJkNBvL3QijCeS1gIZsQZbo18I5DBzXfR89w-Z37Bprda9kCdHubTO21bISmPOIvrvp6D7lVnAJXPddAADAbNPKlL3ozVVh3PmRzzhRUWWGwgMXD0DruAOPPy1GXLyPkc3bnSRgiuvmy9j8JhFnXwtQMcnVOaUmJzsiIh5XdvZ-L5vmtJIUB4Xyq3e-FhXOyQdpkWTUDudnv4KEILkWn08o6qoAHwXwAblLD2eYKF2dVhEUGWVUPlLw7P4~lTdnRk-d-6uW20Yd2HcfLStCrcOS0EjzCwNQf1pfT1U6QwoJ8xoCF2q2IWAGAQ__",
+            "imageUrl": "https://s3-alpha-sig.figma.com/img/b72a/6f3c/9b0fc31bc6ec3e92c8297ba178f4d96a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Tcdi6oEBNUQ~53dc5WTJvOu9hAdv9nRNDIX6mCGjqdVVKhzSdRPE7nXf4bYiUsM7w0GwOvnelPrdOOf1nJZxZ~vz~sQqSySewmQSVVe5IdromUZvsymhWT0ITmQkrxQfgYy1nssNsNrYX6lQYo7CD2Z1kq~t~E~tFwHfo9y6pDnrUYH2q3wSwH4P9pwh1JsQJHYtJ8yfl-g35MUbfF~yrQGZSIlJbEHTHQOQlJH7rMNXOXsWyHgmxcIKmzSb-~z~qzCOVD0u40kW--DrzPKLV54laE5aebiqVJ9HLedmjr87DO5IQkpcU1IEpRhuR2qow2LPD~t-5c~F19hW3mB4jA__",
             "ownerId": "user_2srjTUum0mAKdBMVpcfyjNkjEaj",
             "category": "Jackets",
             "detail": "Classic denim jacket with modern fit. Made from premium denim, this jacket features brass buttons, adjustable cuffs, and multiple pockets. Perfect for casual wear in any season.",
@@ -158,9 +158,9 @@
             "id": 9
         },
         {
-            "name": "Smart Watch",
+            "name": "Nike Shirt",
             "price": "199.99",
-            "imageUrl": "https://s3-alpha-sig.figma.com/img/a7d9/2a09/015b72cbd4cb7c81e06159e063ba609a?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UUkLPPp~MQfz6rOgMsJW-wOQlCIsoetMBgNpHo4z10h26WlC03ct5B-XeDwMey-5uKO3SxVXLjoXa~3oydFsduW0EGvcUUi4R3hp~Nv901NOPEiB0imPL3g3ZO9EO8-oaVTfY1qbcooUWT2FApxDU9NmYee48UUrVXweMMz4KyG5uQyAWIMozk3BybWuO2SPoQ-44o6e-8-~fnJuZNP62v63sSu7HJ31GZV1bHboTbqkmC5CfpsW3a2L1dpwCDvu3eNWg~USRlK1ZwwnDpxRWQnJpwv~MON~v2SirZSGmNFgwW10Do3JLTypKb6kU-AA3Kd4eGsYApIT6ezbc7yOdw__",
+            "imageUrl": "https://s3-alpha-sig.figma.com/img/a7d9/2a09/015b72cbd4cb7c81e06159e063ba609a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=YkECAiSmTUHvZ8P-UPKRDYZvWih1hUQR3Fu5CQdJyFjQ2R8-Wl~dRiilhyY~MaCAKcTesEoryebqTu4sElk85lvfp-9ksorw4B52Q~H1SggNvOJOvLt8PPKqa5yd39zd4c~WSF9ZhlF9jWmX~Bn0R6IkDnSUCleMer5~NkwDdqvmMLt0e7Zw-suxXHBEKxiAY7jkCA8dtpq6PKCkxUvka43m13iGBnCKtIThkO0YYLMpyiaTph8RCtwyZPLJaiHJk9K4tvvbxYmF-KCi3HclH82Q~u2HExuzKBAIF3Q3midiAuIqRBgmeLuB0c7oXPKsYS4EMM9-0X4gEomtT102xQ__",
             "ownerId": "user_2srjTUum0mAKdBMVpcfyjNkjEaj",
             "category": "Electronics",
             "detail": "Advanced smartwatch with heart rate monitoring, GPS tracking, and smartphone notifications. Features a long-lasting battery and water-resistant design. Perfect for fitness enthusiasts and tech lovers.",

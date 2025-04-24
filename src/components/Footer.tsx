@@ -16,8 +16,8 @@ function Footer() {
             <h2 className="text-neutral-500 font-normal text-[14px] mt-4">We love to surprise our subscribers with occasional gifts.</h2>
           </div>
           <div className="flex items-center gap-4">
-            <input type="text" placeholder="Your email address" className="px-4 py-2 w-90 border-2 border-neutral-200 rounded-[6px] focus:outline-none focus:ring-2 focus:ring-neutral-500 text-neutral-900"/>
-            <button className="px-6 py-2.5 bg-neutral-900 text-neutral-100 text-[14px] rounded-[6px] hover:bg-neutral-600 font-medium">Subscribe</button>
+            <input type="text" placeholder="Your email address" className="px-4 py-2 w-90 border-2 border-neutral-200 rounded-[6px] focus:outline-none focus:ring-2 focus:ring-neutral-500 text-neutral-900 cursor-pointer"/>
+            <button className="px-6 py-2.5 bg-neutral-900 text-neutral-100 text-[14px] rounded-[6px] hover:bg-neutral-600 font-medium cursor-pointer">Subscribe</button>
           </div>
         </div>
       </div>
@@ -45,9 +45,9 @@ function Footer() {
           <p className=" mb-4 text-neutral-400 text-[14px] font-medium">SUPPORT</p>
           <nav>
             <ul className="space-y-2 font-medium text-[14px] text-neutral-500">
-              <li><a href="/faq" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300">FAQ</a></li>
-              <li><a href="/terms" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300">Terms of use</a></li>
-              <li><a href="/privacy" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300">Privacy Policy</a></li>
+              <li><a href="/faq" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300 cursor-pointer">FAQ</a></li>
+              <li><a href="/terms" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300 cursor-pointer">Terms of use</a></li>
+              <li><a href="/privacy" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300 cursor-pointer">Privacy Policy</a></li>
             </ul>
           </nav>
         </div>
@@ -55,9 +55,9 @@ function Footer() {
           <p className="text-neutral-400 text-[14px] font-medium mb-4 ">COMPANY</p>
           <nav>
             <ul className="space-y-2 text-neutral-300 text-[14px] font-medium">
-              <li><a href="/about" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300">About us</a></li>
-              <li><a href="/contact" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300">Contact</a></li>
-              <li><a href="/careers" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300">Careers</a></li>
+              <li><a href="/about" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300 cursor-pointer">About us</a></li>
+              <li><a href="/contact" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300 cursor-pointer">Contact</a></li>
+              <li><a href="/careers" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300 cursor-pointer">Careers</a></li>
             </ul>
           </nav>
         </div>
@@ -65,9 +65,9 @@ function Footer() {
           <p className="text-neutral-400 text-[14px] font-medium mb-4 ">SHOP</p>
           <nav>
             <ul className="space-y-2 text-neutral-300 text-[14px] font-medium">
-              <li><a href="/account" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300">My Account</a></li>
-              <li><a href="/checkout" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300">Checkout</a></li>
-              <li><a href="/cart" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300">Cart</a></li>
+              <li><a href="/account" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300 cursor-pointer">My Account</a></li>
+              <li><a href="/checkout" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300 cursor-pointer">Checkout</a></li>
+              <li><a href="/cart" className="font-medium text-[14px] text-neutral-500 hover:text-neutral-300 cursor-pointer">Cart</a></li>
             </ul>
           </nav>
         </div>

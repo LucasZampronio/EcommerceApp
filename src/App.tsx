@@ -1,23 +1,32 @@
 import './App.css'
-import Home from '../src/pages/home'
-import Login from '../src/pages/Login'
-import { BrowserRouter, Route, Routes,Navigate } from 'react-router-dom'
-import Listing from '../src/pages/Listing'
-import ProductDetail from '../src/pages/ProductDetail'
-import LoginUser from './components/Login/Login'
+import Home from './pages/home'
+import Login from './pages/Login'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Listing from './pages/Listing'
+import ProductDetail from './pages/ProductDetail'
+import Register from './pages/Register'
+import Cart from './pages/cart'
+import Checkout from './pages/Checkout'
+import AfterPayment from './pages/AfterPayment'
+import { Provider } from 'react-redux'
+import { store } from './store/store'
 
 function App() {
-
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
-       <Route path='/Home' element={<Home />}/>
-       <Route path='/Login' element={<LoginUser />}/>
-       <Route path="/product/:id" element={<ProductDetail />} />
-       <Route path='/Listing' element={<Listing/>}/>
-      </Routes>
-    </BrowserRouter>
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Listing" element={<Listing />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/afterpayment" element={<AfterPayment />} />
+        </Routes>
+      </Router>
+    </Provider>
   )
 }
 

@@ -38,7 +38,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   };
 
   return (
-    <div className="w-full md:w-64 h-115 mr-4 p-4 font-[Inter] border-2 rounded-lg border-neutral-200 ml-35">
+    <div className="w-full md:w-64 h-115 mr-4 p-4 font-[Inter] border-2 rounded-lg border-neutral-200 ml-35 ">
       {/* FILTRO DAS CATEGORIAS */}
       <div className="mb-4">
         <h3 className="font-semibold mb-5 mt-2">Categories</h3>
@@ -67,7 +67,10 @@ const Sidebar: React.FC<SidebarProps> = ({
             step="1" 
             value={PriceRange} 
             onChange={handlePriceChange}
-            className="w-full bg-neutral-900"
+            style={{
+              background: `linear-gradient(to right, #171717 ${(PriceRange / MaxPrice) * 100}%, #E5E5E5 ${(PriceRange / MaxPrice) * 100}%)`
+            }}
+            className="w-full h-2 rounded-full appearance-none [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-neutral-900 [&::-webkit-slider-thumb]:border-0 [&::-webkit-slider-thumb]:cursor-pointer [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-neutral-900 [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:cursor-pointer"
           />
           <div className="flex justify-between mt-2">
             <span>R$0</span>

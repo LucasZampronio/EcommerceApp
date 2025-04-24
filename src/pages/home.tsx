@@ -23,6 +23,7 @@ function Home() {
       navigate('/Listing')
   }
 
+
   return (
     <div>
         <Header />
@@ -32,7 +33,7 @@ function Home() {
             <div className='ml-37'>
               <h1 className='text-neutral-800 font-bold text-[32px]'>Fresh Arrivals Online</h1>
               <h2 className='text-neutral-600 font-normal tex-[14px] mt-5'>Discover Our Newest Collection Today.</h2>
-              <a onClick={listingpage} href="">
+              <a onClick={listingpage } href="">
                 <div  className=' border-2 rounded-[6px] mt-16 gap-4 flex bg-neutral-900 w-50 hover:border-neutral-600 hover:bg-neutral-600 justify-center items-center pt-3 pb-3'>
                     <button className='font-medium text-[14px] text-neutral-100'>View Collection</button>
                     <img className='ml-3' src={RightArrow} alt="" />
@@ -121,7 +122,7 @@ function Home() {
               <h1 className='text-neutral-800 font-bold text-[24px]'>Browse Our Fashion Paradise!</h1>
               <p className='text-neutral-600 font-normal tex-[14px] mt-5 w-120' >Step into a world of style and explore our diverse collection of clothing categories.</p>
               <div  className=' border-2 rounded-[6px] mt-8 gap-4 flex bg-neutral-900 w-50 hover:border-neutral-600 hover:bg-neutral-600 justify-center items-center pt-3 pb-3'>
-                <button className='font-medium text-[14px] text-neutral-100' >Start Browsing</button>
+                <button onClick={listingpage} className='font-medium text-[14px] text-neutral-100' >Start Browsing</button>
                 <img src={RightArrow} alt="" />
               </div>
             </div>
